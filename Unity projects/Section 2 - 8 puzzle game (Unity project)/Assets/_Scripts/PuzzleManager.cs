@@ -31,11 +31,6 @@ public class PuzzleManager : MonoBehaviour {
 
     public void SolvePuzzle()
     {
-        StartCoroutine(doSolve());        
-    }
-
-    private IEnumerator doSolve()
-    {
         Stopwatch s = new Stopwatch();
 
         s.Start();
@@ -55,7 +50,6 @@ public class PuzzleManager : MonoBehaviour {
 
         print("Start state: " + _state);
         StartCoroutine(animatePath(path));
-        yield return null;
     }
 
     private void Block_Clicked(object sender, System.EventArgs e)
