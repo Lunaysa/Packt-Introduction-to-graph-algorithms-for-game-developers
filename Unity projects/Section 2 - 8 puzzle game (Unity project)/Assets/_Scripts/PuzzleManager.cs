@@ -118,9 +118,5 @@ public class PuzzleManager : MonoBehaviour {
             LeanTween.move(_Blocks[index].gameObject, indexToWorldPosition(i), 0.25f); 
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
